@@ -95,7 +95,7 @@ else { $(timeI).addClass("past")
     
     
 saveButton.on("click",function(event){
-    var getInfo = $(this).siblings("description").val();
+    var getInfo = $(this).siblings(".description").val();
     console.log(getInfo);
     
     var parID = $(this).parent().attr("id");
