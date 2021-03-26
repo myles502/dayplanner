@@ -20,7 +20,6 @@ timeSeventeen = 17
 var saveButton = $(".saveBtn"); 
 
 
- 
 
 //compare id of text box to moment to change color 
 //find a way to use local storage for click events on class of save button 
@@ -102,5 +101,6 @@ saveButton.on("click",function(event){
     localStorage.setItem(parID,getInfo);
     });  
     
-    
+    localStorage.getItem(parID);   
+
 
