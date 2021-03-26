@@ -17,6 +17,8 @@ timeSixteen = 16
 var timeI = $("#hour-17")
 timeSeventeen = 17
 
+var saveButton = $(".saveBtn"); 
+
 
  
 
@@ -92,7 +94,13 @@ else { $(timeI).addClass("past")
     
     
     
+saveButton.on("click",function(event){
+    var getInfo = $(this).siblings("description").val();
+    console.log(getInfo);
     
+    var parID = $(this).parent().attr("id");
+    localStorage.setItem(parID,getInfo);
+    });  
     
     
 
